@@ -1,0 +1,224 @@
+:root {
+--backgroundColorFirst: #e5e5e5;
+--backgroundColorSecond: #2f303a;
+--fontColorFirst: #212121;
+--fontColorSecond:  #757575;
+--button: #00000026;
+--colorBlue: #2196f3;
+--colorShadow: #ffffff99;
+--colorWhite: #ffffff;
+--colorDarkWhite: #f5f4fa; 
+}
+/*body style*/
+.body {
+color: var(--fontColorFirst);
+font-family: "Roboto","Raleway", sans-serif;
+} 
+.h1,
+.h2,
+.h3{
+    color: red;}
+.h4,
+.h5,
+.h6 {color: red;}
+.p,
+.ul {
+display: flex;
+padding: 0;
+margin: 0;
+}
+.img {
+display: block;
+max-width: 100%;
+padding: 0;
+margin: 0;
+}
+.list {list-style: none;}
+    /*body end*/
+    /*logo*/  
+.logo {
+ font-family: "Raleway";
+ font-weight: 700;
+font-size: 26px;
+line-height: 1.38;
+letter-spacing: 0.03em;
+text-decoration: none;
+color: var(--colorBlue);
+}   
+.logo-recolor-header {color: var(--fontColorFirst)}
+/*loge end*/
+/*navigation*/
+.navigation {
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 1.15;
+letter-spacing: 0.02em;
+}
+.navigation .link:hover, 
+.navigation .link:focus {color: var(--colorBlue);
+outline-color: var(--colorBlue);}
+.navigation .link {text-decoration: none;
+color: var(--fontColorFirst)}
+.navigation .current {color: var(--colorBlue)}
+/*navigation end*/
+/*contact*/
+.links-contact {
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 1.15;
+letter-spacing: 0.02em;
+}
+.links-contact .link {
+color: var(--fontColorSecond);
+text-decoration: none; 
+}    
+.links-contact .link:focus,
+.links-contact .link:hover {
+color: var(--colorBlue);}
+    /*contact end*/
+/*efektywne rozwiazania glowny naglowek*/
+.back-section-first {
+background-color: var(--backgroundColorSecond);
+}
+.first-heading {
+font-weight: 900;
+font-size: 44px;
+line-height: 1.36;
+letter-spacing: 0.06em;
+text-transform: uppercase;
+text-align: center;
+color: var(--colorWhite);
+background-color: var(--backgroundColorSecond);
+}
+.heading {
+font-weight: 700;
+font-size: 14px;
+line-height: 1.14;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+color: var(--fontColorFirst);
+}
+.text {
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 1.71;
+letter-spacing: 0.03em;
+color: var(--fontColorSecond);
+}
+.button {
+background: var(--colorDarkwhite) ;
+color: var(--fontColorFirst);
+font-family: "Roboto";
+font-weight: 700;
+font-size: 16px;
+line-height: 1.62;
+text-align: center;
+}
+.button-order {
+font-weight: 700;
+font-size: 16px;
+line-height: 1.87;
+letter-spacing: 00.06em;
+text-align: center;
+align-items: center;
+color: var(--colorWhite);
+background: var(--colorBlue);
+cursor: pointer;}
+.button.hover {
+background: var(--colorBlue);
+color: var(--colorWhite);
+cursor: pointer;
+}
+    /* efektywne rozwiazania end*/
+    /* czym sie zajmujemy*/
+.second-heading {
+font-family: "Roboto";
+font-weight: 700;
+font-size: 36px;
+line-height: 1.16;
+text-align: center;
+letter-spacing: 0.03em;
+}
+.back-section-second {
+background-color: var(--colorDarkWhite);
+}
+.third-heading {
+font-family: "Roboto";
+font-weight: 700;
+font-size: 36px;
+line-height: 1.16;
+text-align: center;
+letter-spacing: 00.03em;
+}
+.person-name {
+font-weight: 500;
+font-size: 16px;
+line-height: 1.18;
+letter-spacing: 0.03em;
+color: var(--fontColorFirst)
+}
+.person-position {
+font-size: 16px;
+line-height: 1.18;
+letter-spacing: 0.03em;
+color: var(--fontColorSecond);
+}
+/* czym sie zajmujemy end */
+/* footer*/
+.back-footer {
+color: var(--colorWhite);
+font-weight: 400;
+font-size: 14px;
+font-style: normal;
+line-height: 1.71;
+letter-spacing: 0.03em;
+background-color: var(--backgroundColorSecond);
+}
+.logo-recolor-footer { color: var(--colorWhite);}
+.address {
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 1.71;
+letter-spacing: 0.03em;
+color: var(--colorWhite);
+}
+.back-footer .link {
+text-decoration: none;
+color: var(--fontColorSecond);
+}
+.back-footer .link:focus,
+.back-footer .link:hover {
+    color: var(--colorBlue);
+}
+/*footer end*/
+/*portfolio*/
+.heading-portfolio {
+font-weight: 700;
+font-size: 18px;
+line-height: 2;
+letter-spacing: 0.06em;
+color: var(--fontColorFirst)
+}
+.text-signature {
+font-weight: 400;
+font-size: 16px;
+line-height: 1.87;
+letter-spacing: 0.03em;
+color: var(--fontColorSecond)
+}
+.button-portfolio {
+background: var(--colorDarkwhite);
+color: var(--fontColorFirst);
+font-family: "Roboto";
+font-weight: 500;
+font-size: 16px;
+line-height: 1.62;
+cursor: pointer;
+}
+.portfolio-link:hover {
+background-color: var(--colorBlue);
+}
