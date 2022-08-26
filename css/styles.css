@@ -14,14 +14,7 @@
 color: var(--fontColorFirst);
 font-family: "Roboto","Raleway", sans-serif;
 } 
-.h1,
-.h2,
-.h3
-.h4,
-.h5,
-.h6
-.p,
-.ul {
+ {
 display: flex;
 padding: 0;
 margin: 0;
@@ -40,8 +33,15 @@ padding-left: 15px;
 padding-right: 15px;
 margin: auto;
 }
+.header-container {
+    justify-content: space-between;
+    align-items: center;
+}
 
-.list {list-style: none;}
+.list {list-style: none;
+padding: 0;
+margin: 0;
+}
     /*body end*/
     /*logo*/  
 .logo {
@@ -66,7 +66,7 @@ line-height: 1.15;
 letter-spacing: 0.02em;
 display: flex;
 align-items: center;
-margin-top: 24px;
+
 }
 .navigation .link:hover, 
 .navigation .link:focus {color: var(--colorBlue);
@@ -74,9 +74,9 @@ outline-color: var(--colorBlue);
 }
 .navigation .list {
 display: flex;
-justify-content: space-between;
 padding-top: 32px;
 padding-bottom: 32px;
+margin-left: 93px;
 }
 .navigation .item:not(:last-child) {margin-right: 50px;}
 
@@ -84,11 +84,12 @@ padding-bottom: 32px;
 color: var(--fontColorFirst);
 }
 .navigation .current {color: var(--colorBlue);
-display: flex;
-justify-content: space-between;
 }
 /*navigation end*/
 /*contact*/
+.links-contact .item:not(:last-child){
+    margin-right: 50px;
+}
 .links-contact {
 font-style: normal;
 font-weight: 500;
