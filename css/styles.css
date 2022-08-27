@@ -111,17 +111,11 @@ color: var(--colorBlue);}
 /*efektywne rozwiazania glowny naglowek*/
 .back-section-first {
 background-color: var(--backgroundColorSecond);
-justify-content: center;
-margin-left: auto;
-margin-right: auto;
-margin-bottom: 30px;
 }
 .back-section-first .container {
 flex-direction: column;
 padding-top: 200px;
-padding-left: 452px;
-padding-right: 452px;
-padding-bottom: 280px;
+padding-bottom: 200px;    
 }
 .first-heading {
 font-weight: 900;
@@ -132,6 +126,11 @@ text-transform: uppercase;
 text-align: center;
 color: var(--colorWhite);
 background-color: var(--backgroundColorSecond);
+width: 696px;
+justify-content: center;
+margin-left: auto;
+margin-right: auto;
+margin-bottom: 30px;
 }
 .button {
 background: var(--colorDarkwhite) ;
@@ -153,12 +152,10 @@ color: var(--colorWhite);
 background: var(--colorBlue);
 cursor: pointer;
 border-radius: 4px;
-width: 200px;
-height: 50px;
-padding-left: 700px;
-padding-top: 350px;
-padding-right: 700px;
-padding-bottom: 200px;
+padding-left: 42px;
+padding-top: 10px;
+padding-right: 41px;
+padding-bottom: 10px;
 margin-left: auto;
 margin-right: auto;
 }
