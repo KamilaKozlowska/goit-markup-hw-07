@@ -360,7 +360,8 @@ flex-wrap: wrap;
 background-color: var(--colorBlue);
 }
 .gallery-elements-buttons {
-display: flex;    
+display: flex;
+justify-content: center;    
 }
 .gallery-elements-buttons>li:not(:last-child) {
 margin-right: 8px;
