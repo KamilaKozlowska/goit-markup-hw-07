@@ -15,7 +15,7 @@
 color: var(--fontColorFirst);
 font-family: "Roboto","Raleway", sans-serif;
 } 
-.ul {
+ul {
 list-style: none;
 }
 .img {
@@ -321,10 +321,10 @@ display: block;
 }
 .gallery-elements {
 flex-wrap: wrap;
-margin-top: calc(-1*30px);
-margin-left: calc(-1*30px);
+padding-top: calc(-1*34px);
+padding-left: calc(-1*30px);
 flex-wrap: wrap;
-
+display: flex;
 }
 .gallery-elements .link {
 display: inline-block;
@@ -359,3 +359,10 @@ flex-wrap: wrap;
 .portfolio-link:hover .gallery-elements-buttons {
 background-color: var(--colorBlue);
 }
+.gallery-elements-buttons {
+display: flex;    
+}
+.gallery-elements-buttons>li:not(:last-child) {
+margin-right: 8px;
+}
+    
