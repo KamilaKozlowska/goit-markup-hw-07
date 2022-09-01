@@ -37,7 +37,7 @@ margin: auto;
 padding: 94px 0;    
 }
 header {
----border-bottom: 1px solid var(--headerBorderColor);
+border-bottom: 1px solid var(--headerBorderColor);
 }
 .header-container {
 justify-content: space-between;
@@ -172,10 +172,9 @@ cursor: pointer;
 .text-section .list {    
 display: flex;
 flex-wrap: wrap;
-column-gap: 30px;
+gap: 30px;
 }
 .text-section .list .item {
-margin-left: calc(-1*30px);
 flex-basis: calc((100% - 3 * 30px) / 4);
 }
 .heading .list {
