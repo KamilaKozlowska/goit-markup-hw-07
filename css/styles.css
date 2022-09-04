@@ -19,7 +19,7 @@ font-family: "Roboto","Raleway", sans-serif;
 ul {
 list-style: none;
 }
-.img {
+img {
 display: block;
 max-width: 100%;
 padding: 0;
@@ -36,7 +36,7 @@ margin: auto;
 .section{
 padding: 94px 0;
 }
-.header {
+header {
 border-bottom: 1px solid var(--headerBorderColor);
 }
 .header-container {
@@ -152,7 +152,6 @@ align-items: center;
 color: var(--colorWhite);
 background: var(--colorBlue);
 cursor: pointer;
-border-radius: 4px;
 padding-left: 42px;
 padding-top: 10px;
 padding-right: 41px;
@@ -284,8 +283,8 @@ font-size: 14px;
 font-style: normal;
 line-height: 1.71;
 letter-spacing: 0.03em;
-background-color: var(--backgroundColorSecond);
-padding-top: 60px;
+background-color: var(--backgroundColorSecond);    
+margin-top: 60px;
 padding-bottom: 60px;
 }
 .logo-recolor-footer { color: var(--colorWhite);
@@ -294,10 +293,6 @@ margin-top: auto;
 .back-footer .container {
 flex-direction: column;
 align-items: baseline;
-}
-.back-footer .list {
-flex-direction: column;
-margin-bottom: 9px;
 }
 .address {
 font-style: normal;
@@ -313,7 +308,7 @@ color: var(--fontColorSecond);
 }
 .back-footer .link:focus,
 .back-footer .link:hover {
-    color: var(--colorBlue);
+color: var(--colorBlue);
 }
 /*footer end*/
 /*************portfolio*******************/
@@ -353,6 +348,7 @@ display: inline-block;
 padding: 0px;
 margin: 0px;
 text-decoration: none;
+color: var(--fontColorSecond);
 width: auto;
 color: var(--fontColorFirst);
 }
@@ -373,12 +369,14 @@ border-style: hidden;
 border-radius: 4px;
 padding: 6px 22px;
 }
-.gallery-elements-buttons .portfolio-link:hover  {
-background-color: var(--colorBlue);
+.gallery-elements-buttons .portfolio-link:hover,
+.gallery-elements-buttons .portfolio-link:focus {
+color: var(--colorBlue);
 }
 .gallery-elements-buttons {
 display: flex;
-justify-content: center;    
+justify-content: center;
+margin : 0px auto 50px;
 }
 .gallery-elements-buttons>li:not(:last-child) {
 margin-right: 8px;
