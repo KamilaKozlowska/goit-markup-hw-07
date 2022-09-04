@@ -283,9 +283,11 @@ font-size: 14px;
 font-style: normal;
 line-height: 1.71;
 letter-spacing: 0.03em;
-background-color: var(--backgroundColorSecond);    
-margin-top: 60px;
-padding-bottom: 60px;
+background-color: var(--backgroundColorSecond);
+padding:60px 0px 60px 0px;
+}
+.back-footer .logo {
+padding-top: 0px;
 }
 .logo-recolor-footer { color: var(--colorWhite);
 margin-top: auto;
