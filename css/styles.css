@@ -42,6 +42,7 @@ border-bottom: 1px solid var(--headerBorderColor);
 .header-container {
 justify-content: space-between;
 align-items: center;
+padding: 24px 15px ;
 }
 .list {list-style: none;
 padding: 0;
@@ -57,8 +58,6 @@ line-height: 1.38;
 letter-spacing: 0.03em;
 text-decoration: none;
 color: var(--colorBlue);
-padding-top: 24px;
-padding-bottom: 24px;
 }   
 .logo-recolor-header {color: var(--fontColorFirst)}
 /*logo end*/
@@ -78,8 +77,6 @@ outline-color: var(--colorBlue);
 }
 .navigation .list {
 display: flex;
-padding-top: 32px;
-padding-bottom: 32px;
 margin-left: 93px;
 }
 .navigation .item:not(:last-child) {margin-right: 50px;}
@@ -245,6 +242,9 @@ padding-bottom: 30px;
 .back-section-second .item {
 background-color: var(--colorWhite);
 border-radius: 0px 0px 4px 4px;
+box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+0px 1px 1px rgba(0, 0, 0, 0.14),
+0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 .back-section-second .caption {
 display: flex;
@@ -286,9 +286,6 @@ letter-spacing: 0.03em;
 background-color: var(--backgroundColorSecond);
 padding:60px 0px 60px 0px;
 }
-.back-footer .logo {
-padding-top: 0px;
-}
 .logo-recolor-footer { color: var(--colorWhite);
 margin-top: auto;
 }
@@ -303,6 +300,7 @@ font-size: 14px;
 line-height: 1.71;
 letter-spacing: 0.03em;
 color: var(--colorWhite);
+padding-top: 24px;
 }
 .back-footer .link {
 text-decoration: none;
@@ -350,14 +348,14 @@ display: inline-block;
 padding: 0px;
 margin: 0px;
 text-decoration: none;
-color: var(--fontColorSecond);
 width: auto;
 color: var(--fontColorFirst);
 }
 .gallery-elements .caption {
 padding: 20px 24px;
-border: 1px solid var(--caption);
-border-top: none;
+border-left: 1px solid var(--caption);
+border-right: 1px solid var(--caption);
+border-bottom: 1px solid var(--caption);
 }
 .gallery-elements-buttons .portfolio-button  {
 background-color: var(--colorDarkWhite);
@@ -373,7 +371,8 @@ padding: 6px 22px;
 }
 .gallery-elements-buttons .portfolio-link:hover,
 .gallery-elements-buttons .portfolio-link:focus {
-color: var(--colorBlue);
+background-color: var(--colorBlue);
+color: var(--colorWhite);
 }
 .gallery-elements-buttons {
 display: flex;
