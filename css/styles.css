@@ -14,7 +14,6 @@
 --color-transparent: rgba(255, 255, 255, 0.6);
 --color-transparent-dark: rgba(255, 255, 255, 0.1);
 }
-}
 /*body style*/
 .body {
 color: var(--fontColorFirst);
@@ -96,6 +95,12 @@ color: var(--colorGrey);
 .icon-client:hover,
 .icon-client:focus {
 border-color: var(--colorBlue);
+color: var(--colorWhite);
+cursor: pointer;
+}
+.icon-social:hover,
+.icon-social:focus {
+background-color: var(--colorBlue);
 color: var(--colorWhite);
 cursor: pointer;
 }
@@ -350,7 +355,7 @@ margin: 0;
 padding: 0;
 display: flex;
 gap: 10px;
-align-items: center; albo moze justify???
+align-items: center; /*********albo moze justify???******/
 }
 /* czym sie zajmujemy end */
 /*********Nasi klienci**********/
@@ -379,7 +384,7 @@ display: flex;
 .logo-recolor-footer { color: var(--colorWhite);
 margin-top: auto;
 }
-.back-footer .container {
+.back-footer .wrapper {
 align-items: baseline;
 flex-direction: column;
 display: flex;
@@ -481,6 +486,8 @@ padding: 6px 22px;
 .gallery-elements-buttons .portfolio-link:focus {
 background-color: var(--colorBlue);
 color: var(--colorWhite);
+box-shadow
+cursor: pointer;
 }
 .gallery-elements-buttons {
 display: flex;
