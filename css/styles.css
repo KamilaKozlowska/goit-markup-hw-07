@@ -10,6 +10,10 @@
 --colorDarkWhite: #f5f4fa;
 --caption: #eeeeee; 
 --headerBorderColor: #ececec;
+--colorGrey: #AFB1B8;
+--color-transparent: rgba(255, 255, 255, 0.6);
+--color-transparent-dark: rgba(255, 255, 255, 0.1);
+}
 }
 /*body style*/
 .body {
@@ -74,13 +78,26 @@ background-color: var(--colorDarkWhite);
 width: 44px;
 height: 44px;
 border: none;
-border-radius: ;
+border-radius: 50%;
 }
 .icon-client {
 width: 170px;
 height: 92px;
 border-radius: 4px;
-border: 1px solid var(nowy kolor dodaj)
+border: 1px solid var(--colorGrey)
+}
+.icon-footer {
+color: var(--colorWhite);
+background: var(--color-transparent-dark);
+}
+.client-link {
+color: var(--colorGrey);
+}
+.icon-client:hover,
+.icon-client:focus {
+border-color: var(--colorBlue);
+color: var(--colorWhite);
+cursor: pointer;
 }
 
 
@@ -171,7 +188,6 @@ letter-spacing: 0.06em;
 text-transform: uppercase;
 text-align: center;
 color: var(--colorWhite);
-background-color: var(--backgroundColorSecond);
 width: 696px;
 justify-content: center;
 margin: 0 auto 30px;
@@ -226,13 +242,14 @@ color: var(--fontColorFirst);
 text-align: center;
 }
 .list2 {
-margin-bottom: 10px;
+margin: 0;
+padding: 0;
 flex-wrap: wrap;
 display: flex;
 gap: 30px;
 }
 .item2 {
-flex-basis: calc((100% *90px)/4);
+flex-basis: calc((100% - 90px)/4);
 }
 .text {
 font-style: normal;
@@ -329,6 +346,8 @@ padding: 0;
 margin: 0;
 }
 .flex-social {
+margin: 0;
+padding: 0;
 display: flex;
 gap: 10px;
 align-items: center; albo moze justify???
@@ -336,12 +355,14 @@ align-items: center; albo moze justify???
 /* czym sie zajmujemy end */
 /*********Nasi klienci**********/
 .flex-clients {
+margin: 0;
+padding: 0;
 display: flex;
 gap: 30px;
 flex-wrap: wrap;
 }
 .flex-logos {
-flex-basis: calc((100% -120px)/6);
+flex-basis: calc((100% - 150px)/6);
 }
 /* footer*/
 .back-footer {
@@ -353,13 +374,15 @@ line-height: 1.71;
 letter-spacing: 0.03em;
 background-color: var(--backgroundColorSecond);
 padding:60px 0px 60px 0px;
+display: flex;
 }
 .logo-recolor-footer { color: var(--colorWhite);
 margin-top: auto;
 }
 .back-footer .container {
-flex-direction: column;
 align-items: baseline;
+flex-direction: column;
+display: flex;
 }
 .address {
 font-style: normal;
@@ -377,6 +400,23 @@ color: var(--fontColorSecond);
 .back-footer .link:focus,
 .back-footer .link:hover {
 color: var(--colorBlue);
+}
+.footer-heading {
+margin-top: 12px;
+margin-bottom: 20px;
+font-weight: 700;
+font-size: 14px;
+line-height: 16px;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+color: var(--colorWhite);
+}
+.flex-footer {
+padding: 0;
+margin: 0;
+display: flex;
+justify-content: center;
+gap: 10px;
 }
 /*footer end*/
 /*************portfolio*******************/
