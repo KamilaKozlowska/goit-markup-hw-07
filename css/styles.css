@@ -102,7 +102,7 @@ cursor: pointer;
 .icon-social:focus {
 background-color: var(--colorBlue);
 color: var(--colorWhite);
-cursor: pointer;
+cursor: per;
 }
 
 
