@@ -102,10 +102,8 @@ cursor: pointer;
 .icon-social:focus {
 background-color: var(--colorBlue);
 color: var(--colorWhite);
-cursor: per;
+cursor: pointer;
 }
-
-
     /*logo*/  
 .logo {
 font-family: "Raleway";
