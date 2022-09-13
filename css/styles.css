@@ -74,10 +74,8 @@ border-radius: 4px;
 background-color: var(--colorDarkWhite);
 }
 .icon-social {
-width: 44px;
-height: 44px;
-border: none;
-border-radius: 50%;
+width: 20px;
+height: 20px;
 }
 .icon-client {
 width: 170px;
@@ -89,19 +87,19 @@ border: 1px solid var(--colorGrey)
 color: var(--colorWhite);
 background: var(--color-transparent-dark);
 }
-.client-link {
+.social-link {
+display: flex;
+align-items: center;
+justify-content: center;
+width: 44px;
+height: 44px;
+border-radius: 50%;
 color: var(--colorGrey);
 }
 .icon-client:hover,
 .icon-client:focus {
 border-color: var(--colorBlue);
 color: var(--colorBlue);
-cursor: pointer;
-}
-.icon-social:hover,
-.icon-social:focus {
-background-color: var(--colorBlue);
-color: var(--colorWhite);
 cursor: pointer;
 }
     /*logo*/  
