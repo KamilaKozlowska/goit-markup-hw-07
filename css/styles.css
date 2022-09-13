@@ -82,8 +82,8 @@ width: 106px;
 height: 60px;
 }
 .icon-footer {
-color: var(--colorWhite);
-background: var(--color-transparent-dark);
+width: 20px;
+height: 20px;
 }
 .social-link {
 display: flex;
@@ -372,6 +372,11 @@ align-items: center;
 justify-content: center;
 border-radius: 4px;
 }
+.client-link:hover,
+.client-link:focus {
+border: 1px var(--colorBlue) solid;
+color: var(--colorBlue);
+}
 .flex-logos {
 display: flex;
 }
@@ -428,6 +433,20 @@ margin: 0;
 display: flex;
 justify-content: center;
 gap: 10px;
+}
+.footer-link {
+color: var(--colorWhite);
+width: 44px;
+height: 44px;
+display: flex;
+align-items: center;
+justify-content: center;
+background-color: var(--color-transparent-dark);
+border-radius: 50%;
+}
+.footer-link:hover,
+.footer-link:focus {
+background-color: var(--colorBlue);
 }
 /*footer end*/
 /*************portfolio*******************/
