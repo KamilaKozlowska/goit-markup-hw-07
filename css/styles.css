@@ -65,14 +65,10 @@ fill: currentColor;
 .icon-telephone {
 width: 10px;
 height: 16px;
-fill: var(--fontColorSecond);
-transition: backgroud-color 250ms cubic-bezier(0.4,0,0.2,1);
 }
 .icon-envelope {
 width: 16px;
 height: 12px;
-fill: var(--fontColorSecond);
-transition: fill 250ms cubic-bezier(0.4,0,0.2,1);
 }
 .icon-information {
 width: 270px;
@@ -133,13 +129,17 @@ letter-spacing: 0.02em;
 display: flex;
 align-items: center;
 }
+.navigation .item {
+position: relative;
+}
 .navigation .list .current::after {
 content:"";
 position: absolute;
-
-
-
-
+height: 4px;
+width: 100%;
+border-radius: 2px;
+background-color: var(--colorBlue);
+top: 46px;
 
 }
 .navigation .link:hover, 
@@ -151,8 +151,10 @@ display: flex;
 margin-left: 93px;
 }
 .navigation .item:not(:last-child) {margin-right: 50px;}
-.navigation .link {text-decoration: none;
+.navigation .link {
+text-decoration: none;
 color: var(--fontColorFirst);
+transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .navigation .current {color: var(--colorBlue);
 }
@@ -179,6 +181,7 @@ justify-content: space-between;
 .links-contact .link {
 color: var(--fontColorSecond);
 text-decoration: none;
+transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }    
 .links-contact .link:focus,
 .links-contact .link:hover {
