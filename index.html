@@ -336,14 +336,17 @@ height="260" />
                 Komentarz
                 <textarea name="user-comment" rows="7" placeholder="Wprowadź tekst"></textarea>
                </label>
-               <label class="service-check">
+            <label class="service-check">
+                <input type="checkbox" name="confirm-regulation" class="checkbox" />
+                <div class="icon-holer">
+                    <svg class="icon icon-check">
+                        <use href="./images/icons.svg#icon-check"></use>
+                    </svg>
+                </div>
                 Oświadczam iż akceptuję <a class="service-check-link" href="">Regulamin</a> i
-            <a class="service-check-link" href="">Politykę Prywatności</a>
-            <input type="checkbox" name="confirm-regulation"/>
-            <svg class="icon icon-check">
-                <use href="./images/icons.svg#icon-check"></use></svg>
-            <span class="servive-check-square"></span>
+                <a class="service-check-link" href="">Politykę Prywatności</a>
             </label>
+
             <button class="service-btn" type="submit">Wyślij</button>
             </form>
         </div>
