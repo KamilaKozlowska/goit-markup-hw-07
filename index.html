@@ -290,15 +290,62 @@ height="260" />
 </li>
 </ul>
 </div>
+<div class="footer-newsletter">
+    <h3 class="footer-heading">Zapisz się do newslettera</h3>
+    <form class="ft-newsletter" name="newsletter">
+    <label>
+    <input class="ft-newsletter-email" type="email" name="email" placeholder="E-mail"/>
+    </label>
+    <button class="newsletter-btn" type="submit">
+    <span>Zapisz się</span>
+    <svg class="icon icon-icon-send">
+    <use href="./images/icons.svg#icon-icon-send"></use>
+    </svg>   
+    </button>   
+    </form>
+</div>
 </div>       
 </footer>
-    <div class="backdrop is-hidden asd" data-modal data-modal-close>
+    <div class="backdrop is-hidden asd" data-modal>
         <div class="modal">
             <button class="btn-close" type="button" data-modal-close>
                 <svg class="icon icon-btn-close">
-                    <use href="./images/icons.svg#icon-btn-close"></use>
-                </svg>
+                <use href="./images/icons.svg#icon-btn-close"></use></svg>
             </button>
+            <form class="service" name="service-order" action="">
+             <p class="service-title">Zostaw swoje dane w formularzu poniżej</p>
+             <label class="service-lbl">
+                Imię
+               <svg class="icon icon-input">
+                <use href="./images/icons.svg#icon-person-black"></use></svg>
+               <input type="text" name="user-name"/> 
+             </label>
+             <label class="service-lbl">
+                Telefon
+                <svg class="icon icon-input">
+                    <use href="./images/icons.svg#icon-phone-black"></use></svg>
+                    <input type="tel" name="user-phone"/>
+             </label>
+             <label class="service-lbl">
+                Email 
+                <svg class="icon icon-input">
+                    <use href="./images/icons.svg#icon-email-black"></use></svg>
+                <input type="email" name="user-email"/>
+             </label>   
+             <label class="service-lbl">
+                Komentarz
+                <textarea name="user-comment" rows="7" placeholder="Wprowadź tekst"></textarea>
+               </label>
+               <label class="service-check">
+                Oświadczam iż akceptuję <a class="service-check-link" href="">Regulamin</a> i
+            <a class="service-check-link" href="">Politykę Prywatności</a>
+            <input type="checkbox" name="confirm-regulation"/>
+            <svg class="icon icon-check">
+                <use href="./images/icons.svg#icon-check"></use></svg>
+            <span class="servive-check-square"></span>
+            </label>
+            <button class="service-btn" type="submit">Wyślij</button>
+            </form>
         </div>
     </div>
 <script src="./js/modal.js"></script>
