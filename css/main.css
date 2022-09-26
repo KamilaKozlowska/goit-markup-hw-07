@@ -376,8 +376,15 @@ header {
   display: block;
 }
 
-.team__people {
+.team {
   background-color: var(--colorDarkWhite);
+}
+
+.team__container {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .team__headline {
@@ -403,10 +410,10 @@ header {
      -moz-column-gap: 30px;
           column-gap: 30px;
   display: flex;
-  -webkit-box-orient: vertical;
+  -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -416,6 +423,19 @@ header {
 .team__caption {
   padding-top: 30px;
   padding-bottom: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .team__item {
@@ -469,9 +489,7 @@ header {
   -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.team__link:hover,
-.team__link:focus {
+.team__link:hover, .team__link:focus {
   background-color: var(--colorBlue);
   color: var(--colorWhite);
 }
@@ -765,14 +783,7 @@ header {
   display: flex;
 }
 
-.gallery__main .container {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-.gallery__elements--buttons {
+.gallery__buttons {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -782,11 +793,11 @@ header {
   margin: 0px auto 50px;
 }
 
-.gallery__elements--buttons > li:not(:last-child) {
+.gallery__button-item:not(:last-child) {
   margin-right: 8px;
 }
 
-.gallery__elements--buttons .button__link {
+.button__link {
   background-color: var(--colorDarkWhite);
   color: var(--fontColorFirst);
   font-family: "Roboto";
@@ -802,9 +813,7 @@ header {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.gallery__elements--buttons .button__link:hover,
-.gallery__elements--buttons .button__link:focus {
+.button__link:hover, .button__link:focus {
   background-color: var(--colorBlue);
   color: var(--colorWhite);
   -webkit-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
@@ -825,7 +834,7 @@ header {
   padding: 0;
 }
 
-.gallery__list .gallery__item {
+.gallery__item {
   -ms-flex-preferred-size: calc((100% - 60px) / 3);
       flex-basis: calc((100% - 60px) / 3);
   position: relative;
@@ -835,19 +844,16 @@ header {
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.gallery__list .gallery__item:hover .gallery__list .gallery__item:focus {
+.gallery__item:hover, .gallery__item:focus {
   -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
           box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
-
-.gallery__list .gallery__item:hover .gallery__description,
-.gallery__list .gallery__item:hover .gallery__description {
+.gallery__item:hover .gallery__description, .gallery__item:hover .gallery__description {
   -webkit-transform: translateY(0%);
           transform: translateY(0%);
 }
 
-.gallery__list .gallery__link {
+.gallery__link {
   display: block;
   padding: 0px;
   margin: 0px;
@@ -887,7 +893,7 @@ header {
           transform: translateY(100%);
 }
 
-.gallery__list .gallery__caption {
+.gallery__caption {
   width: 100%;
   padding: 20px 24px;
   border-left: 1px solid var(--caption);
@@ -895,7 +901,7 @@ header {
   border-bottom: 1px solid var(--caption);
 }
 
-.gallery__list .gallery__heading {
+.gallery__heading {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -905,7 +911,7 @@ header {
   margin-bottom: 4px;
 }
 
-.gallery__list .gallery__signature {
+.gallery__signature {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.87;
