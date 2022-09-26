@@ -1,4 +1,4 @@
-.footer__page {
+.footer {
     color: var(--colorWhite);
     font-weight: 400;
     font-size: 14px;
@@ -10,11 +10,11 @@
     display: flex;
 }
 
-.footer__page .container {
+.footer__container {
     justify-content: space-between;
 }
 
-.footer__page--wrap {
+.footer__wrap {
     flex-direction: column;
     display: flex;
 }
@@ -34,7 +34,7 @@
     padding-top: 24px;
 }
 
-.footer__page li:not(:last-child) {
+.footer__contact-item:not(:last-child) {
     margin-bottom: 9px;
 }
 
@@ -42,11 +42,11 @@
     text-decoration: none;
     color: var(--fontColorSecond);
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.footer__link:focus,
-.footer__link:hover {
+&:focus,
+&:hover {
     color: var(--colorBlue);
+}
 }
 
 .footer__heading {
@@ -79,13 +79,12 @@
     border-radius: 50%;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
         color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.footer__item:hover,
-.footer__item:focus {
+&item:hover,
+&item:focus {
     background-color: var(--colorBlue);
 }
-
+}
 .footer__icon {
     width: 20px;
     height: 20px;

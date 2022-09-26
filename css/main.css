@@ -1,4 +1,26 @@
 @charset "UTF-8";
+:root {
+  --backgroundColorFirst: #e5e5e5;
+  --backgroundColorSecond: #2f303a;
+  --fontColorFirst: #212121;
+  --fontColorSecond: #757575;
+  --button: #00000026;
+  --colorBlue: #2196f3;
+  --colorShadow: #ffffff99;
+  --colorWhite: #ffffff;
+  --colorBlack: #000000;
+  --colorDarkWhite: #f5f4fa;
+  --caption: #eeeeee;
+  --headerBorderColor: #ececec;
+  --colorGrey: #AFB1B8;
+  --color-transparent: rgba(255, 255, 255, 0.6);
+  --color-transparent-dark: rgba(255, 255, 255, 0.1);
+  --color-transparent-what-we-do: rgba(47, 48, 58, 0.8);
+  --color-transparent-modal1: rgba(0, 0, 0, 0.1);
+  --color-transparent-modal2: rgba(0, 0, 0, 0.2);
+  --background-gallery-blue: rgba(33, 150, 243, 0.9);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -99,7 +121,6 @@ header {
 .nav__item {
   position: relative;
 }
-
 .nav__item:not(:last-child) {
   margin-right: 50px;
 }
@@ -110,9 +131,7 @@ header {
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.nav__link:hover,
-.nav__link:focus {
+.nav__link:hover, .nav__link:focus {
   color: var(--colorBlue);
   outline-color: var(--colorBlue);
 }
@@ -121,7 +140,6 @@ header {
   color: var(--colorBlue);
   text-decoration: none;
 }
-
 .nav__link--current::after {
   content: "";
   position: absolute;
@@ -167,9 +185,7 @@ header {
       -ms-flex-align: center;
           align-items: center;
 }
-
-.contact__link:focus,
-.contact__link:hover {
+.contact__link:focus, .contact__link:hover {
   color: var(--colorBlue);
 }
 
@@ -248,8 +264,7 @@ header {
   line-height: 1.62;
   text-align: center;
 }
-
-.button.hover {
+.button:hover {
   background: var(--colorBlue);
   color: var(--colorWhite);
   cursor: pointer;
@@ -378,7 +393,7 @@ header {
   margin: 0 auto 50px auto;
 }
 
-.team__people .team__list {
+.team__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -387,23 +402,6 @@ header {
   -webkit-column-gap: 30px;
      -moz-column-gap: 30px;
           column-gap: 30px;
-}
-
-.team__headline .team__list .team__caption {
-  padding-top: 30px;
-  padding-bottom: 30px;
-}
-
-.team__people .team__item {
-  background-color: var(--colorWhite);
-  border-radius: 0px 0px 4px 4px;
-  -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-          box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-}
-
-.team__people .team__caption {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -413,6 +411,18 @@ header {
       -ms-flex-align: center;
           align-items: center;
   padding: 30px 0;
+}
+
+.team__caption {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.team__item {
+  background-color: var(--colorWhite);
+  border-radius: 0px 0px 4px 4px;
+  -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
 .team__name {
@@ -471,7 +481,7 @@ header {
   height: 20px;
 }
 
-.team__list--icons {
+.team__socials {
   margin: 0;
   padding: 0;
   display: -webkit-box;
@@ -532,9 +542,7 @@ header {
   -webkit-transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.clients__link:hover,
-.clients__link:focus {
+.clients__link:hover, .clients__link:focus {
   border: 1px var(--colorBlue) solid;
   color: var(--colorBlue);
 }
@@ -544,7 +552,7 @@ header {
   height: 60px;
 }
 
-.footer__page {
+.footer {
   color: var(--colorWhite);
   font-weight: 400;
   font-size: 14px;
@@ -558,13 +566,13 @@ header {
   display: flex;
 }
 
-.footer__page .container {
+.footer__container {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
 
-.footer__page--wrap {
+.footer__wrap {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -589,7 +597,7 @@ header {
   padding-top: 24px;
 }
 
-.footer__page li:not(:last-child) {
+.footer__contact-item:not(:last-child) {
   margin-bottom: 9px;
 }
 
@@ -599,9 +607,7 @@ header {
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.footer__link:focus,
-.footer__link:hover {
+.footer__link:focus, .footer__link:hover {
   color: var(--colorBlue);
 }
 
@@ -646,9 +652,7 @@ header {
   -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.footer__item:hover,
-.footer__item:focus {
+.footer__itemitem:hover, .footer__itemitem:focus {
   background-color: var(--colorBlue);
 }
 
@@ -707,27 +711,21 @@ header {
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .newsletter__email::-webkit-input-placeholder {
   color: rgba(255, 255, 255, 0.6);
 }
-
 .newsletter__email::-moz-placeholder {
   color: rgba(255, 255, 255, 0.6);
 }
-
 .newsletter__email:-ms-input-placeholder {
   color: rgba(255, 255, 255, 0.6);
 }
-
 .newsletter__email::-ms-input-placeholder {
   color: rgba(255, 255, 255, 0.6);
 }
-
 .newsletter__email::placeholder {
   color: rgba(255, 255, 255, 0.6);
 }
-
 .newsletter__email:focus {
   border-color: var(--colorBlue);
 }
@@ -753,9 +751,7 @@ header {
   -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.newsletter__button:hover,
-.newsletter__button:focus {
+.newsletter__button:hover, .newsletter__button:focus {
   cursor: pointer;
   background-color: #12558a;
 }
@@ -982,9 +978,7 @@ header {
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.modal__close:hover,
-.modal__close:focus {
+.modal__close:hover, .modal__close:focus {
   cursor: pointer;
   border-color: var(--colorBlue);
   color: var(--colorBlue);
@@ -1035,7 +1029,7 @@ header {
   color: var(--colorGrey);
 }
 
-.form__label textarea {
+.form__textarea {
   outline: none;
   resize: none;
   padding: 12px 16px;
@@ -1044,28 +1038,22 @@ header {
   -webkit-transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.form__label textarea:focus {
+.form__textarea:focus {
   border-color: var(--colorBlue);
 }
-
-.form__label textarea::-webkit-input-placeholder {
+.form__textarea::-webkit-input-placeholder {
   color: rgba(117, 117, 117, 0.5);
 }
-
-.form__label textarea::-moz-placeholder {
+.form__textarea::-moz-placeholder {
   color: rgba(117, 117, 117, 0.5);
 }
-
-.form__label textarea:-ms-input-placeholder {
+.form__textarea:-ms-input-placeholder {
   color: rgba(117, 117, 117, 0.5);
 }
-
-.form__label textarea::-ms-input-placeholder {
+.form__textarea::-ms-input-placeholder {
   color: rgba(117, 117, 117, 0.5);
 }
-
-.form__label textarea::placeholder {
+.form__textarea::placeholder {
   color: rgba(117, 117, 117, 0.5);
 }
 
@@ -1079,14 +1067,10 @@ header {
   -webkit-transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.form__input:hover,
-.form__input:focus {
+.form__input:hover, .form__input:focus {
   border-color: var(--colorBlue);
 }
-
-.form__input:hover + .icon__input,
-.form__input:focus + .icon__input {
+.form__input:hover + .icon__input, .form__input:focus + .icon__input {
   fill: var(--colorBlue);
 }
 
@@ -1114,4 +1098,95 @@ header {
 .icon-email-black {
   width: 18px;
   height: 18px;
+}
+
+.form-service__check {
+  position: relative;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  line-height: 1.714;
+  margin-top: 10px;
+  text-align: left;
+  color: var(--colorGrey);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 7px;
+}
+.form-service__check:hover, .form-service__check:focus {
+  cursor: pointer;
+}
+
+.form-service__checkbox {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+.form-service__checkbox:checked + .form-service__square {
+  border-color: var(--colorBlue);
+  background-color: var(--colorBlue);
+  color: var(--colorWhite);
+}
+
+.form-service__square {
+  width: 16px;
+  height: 15px;
+  border: 2px black solid;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: transparent;
+  border-radius: 2px;
+}
+
+.form-service__checkin {
+  width: 11px;
+  height: 8px;
+  fill: currentColor;
+}
+.form-service__checkin:hover, .form-service__checkin:focus {
+  cursor: pointer;
+}
+
+.form-service__check-link {
+  color: var(--colorBlue);
+  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.form-service__check-link:hover, .form-service__check-link:focus {
+  color: #12558a;
+}
+
+.form-service__button {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.875;
+  letter-spacing: 0.06em;
+  padding: 10px 76px;
+  margin: 30px auto;
+  text-align: center;
+  border-radius: 4px;
+  border: none;
+  color: var(--colorWhite);
+  background: var(--colorBlue);
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.form-service__button:hover, .form-service__button:focus {
+  cursor: pointer;
+  background-color: var(--colorBlue);
 }/*# sourceMappingURL=main.css.map */

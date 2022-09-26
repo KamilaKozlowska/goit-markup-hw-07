@@ -53,10 +53,10 @@
     font-size: 16px;
     line-height: 1.62;
     text-align: center;
-}
 
-.button.hover {
+&:hover {
     background: var(--colorBlue);
     color: var(--colorWhite);
     cursor: pointer;
+}
 }

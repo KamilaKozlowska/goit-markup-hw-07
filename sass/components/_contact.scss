@@ -20,11 +20,11 @@
     display: flex;
     gap: 10px;
     align-items: center;
-}
 
-.contact__link:focus,
-.contact__link:hover {
+&:focus,
+&:hover {
     color: var(--colorBlue);
+}
 }
 
 .contact__envelope {

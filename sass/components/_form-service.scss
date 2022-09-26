@@ -10,23 +10,21 @@
     align-items: center;
     justify-content: center;
     gap: 7px;
-}
 
-.form-service__check:hover,
-.form-service__check:focus {
+&:hover,
+&:focus {
     cursor: pointer;
 }
-
+}
 .form-service__checkbox {
     appearance: none;
-}
 
-.form-service__checkbox:checked+.form-service__square {
+&:checked+.form-service__square {
     border-color: var(--colorBlue);
     background-color: var(--colorBlue);
     color: var(--colorWhite);
 }
-
+}
 .form-service__square {
     width: 16px;
     height: 15px;
@@ -42,23 +40,21 @@
     width: 11px;
     height: 8px;
     fill: currentColor;
-}
 
-.form-service__checkin:hover,
-.form-service__checkin:focus {
+&:hover,
+&:focus {
     cursor: pointer;
 }
-
-.form-service__check--link {
+}
+.form-service__check-link {
     color: var(--colorBlue);
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.form-service__check--link:hover,
-.form-service__check--link:focus {
+&:hover,
+&:focus {
     color: #12558a;
 }
-
+}
 .form-service__button {
     font-weight: 700;
     font-size: 16px;
@@ -73,9 +69,10 @@
     background: var(--colorBlue);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.form-service__button:hover,
-.form-service__button:focus {
+&:hover,
+&:focus {
     cursor: pointer;
     background-color: var(--colorBlue);
+}
+}
