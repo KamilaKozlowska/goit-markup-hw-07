@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css">
-<link rel="stylesheet" href="./css/maaain.min.css"/>
+<link rel="stylesheet" href="./css/main.min.css"/>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
@@ -26,11 +26,11 @@ Web<span class="logo__label">Studio</span></a>
 </nav>
 <ul class="contact">
 <li class="contact__item"><a class="contact__link" href="emailto:info@devstudio.com">
-<svg class="icon icon__envelope">
+<svg class="contact__envelope icon">
 <use  href="./images/icons.svg#icon-envelope" width="16" height="12"></use></svg>
 <span>info@devstudio.com</span></a></li>    
 <li class="contact__item"><a class="contact__link" href="tel:+48111111111">
-<svg class="icon icon__telephone">
+<svg class="contact__telephone icon">
 <use  href="./images/icons.svg#icon-telephone" width="10" height="16"></use></svg>
 <span> +48 111 111 111</span></a></li>    
 </ul>
@@ -60,7 +60,7 @@ do celów szpiegowskich i ataków na niezabezpieczone serwery konkurencji</p>
 </div>
 </div>
 <div class="gallery__caption">
-<p class="heading__portfolio">Technocrack</p>
+<p class="gallery__heading">Technocrack</p>
 <p class="text__signature">Strona internetowa</p>
 </div>
 </a>
@@ -78,8 +78,8 @@ do celów szpiegowskich i ataków na niezabezpieczone serwery konkurencji</p>
 </div>
 </div>
 <div class="gallery__caption">
-<p class="heading__portfolio">Grafika New Orlean vs Golden Star</p>
-<p class="text__signature">Dizajn</p>
+<p class="gallery__heading">Grafika New Orlean vs Golden Star</p>
+<p class="gallery__signature">Dizajn</p>
 </div>
 </a>
 </li>
@@ -96,8 +96,8 @@ do celów szpiegowskich i ataków na niezabezpieczone serwery konkurencji</p>
 </div>
 </div>
 <div class="gallery__caption">
-<p class="heading__portfolio">Restauracja Seafood</p>
-<p class="text__signature">Aplikacja</p>
+<p class="gallery__heading">Restauracja Seafood</p>
+<p class="gallery__signature">Aplikacja</p>
 </div>
 </a>
 </li>
@@ -114,8 +114,8 @@ do celów szpiegowskich i ataków na niezabezpieczone serwery konkurencji</p>
 </div>
 </div>
 <div class="gallery__caption">
-<p class="heading__portfolio">Projekt Prime</p>
-<p class="text__signature">Marketing</p>
+<p class="gallery__heading">Projekt Prime</p>
+<p class="gallery__signature">Marketing</p>
 </div>
 </a>
 </li>
@@ -132,8 +132,8 @@ do celów szpiegowskich i ataków na niezabezpieczone serwery konkurencji</p>
 </div>
 </div>
 <div class="gallery__caption">
-<p class="heading__portfolio">Projekt Boxes</p>
-<p class="text__signature">Aplikacja</p>
+<p class="gallery__heading">Projekt Boxes</p>
+<p class="gallery__signature">Aplikacja</p>
 </div>
 </a>
 </li>
@@ -150,8 +150,8 @@ do celów szpiegowskich i ataków na niezabezpieczone serwery konkurencji</p>
 </div>
 </div>
 <div class="gallery__caption">
-<p class="heading__portfolio">Inspiration has no Borders</p>
-<p class="text__signature">Strona internetowa</p>
+<p class="gallery__heading">Inspiration has no Borders</p>
+<p class="gallery__signature">Strona internetowa</p>
 </div>
 </a>
 </li>
@@ -168,8 +168,8 @@ do celów szpiegowskich i ataków na niezabezpieczone serwery konkurencji</p>
 </div>
 </div>
 <div class="gallery__caption">
-<p class="heading__portfolio">Magazyn Limited Edition</p>
-<p class="text__signature">Dizajn</p>
+<p class="gallery__heading">Magazyn Limited Edition</p>
+<p class="gallery__signature">Dizajn</p>
 </div>
 </a>
 </li>
@@ -186,8 +186,8 @@ do celów szpiegowskich i ataków na niezabezpieczone serwery konkurencji</p>
 </div>
 </div>
 <div class="gallery__caption">
-<p class="heading__portfolio">Projekt Lab</p>
-<p class="text__signature">Marketing</p>
+<p class="gallery__heading">Projekt Lab</p>
+<p class="gallery__signature">Marketing</p>
 </div>
 </a>
 </li>
@@ -204,8 +204,8 @@ do celów szpiegowskich i ataków na niezabezpieczone serwery konkurencji</p>
 </div>
 </div>
 <div class="gallery__caption">
-<p class="heading__portfolio">Growing Business</p>
-<p class="text__signature">Aplikacja</p>
+<p class="gallery__heading">Growing Business</p>
+<p class="gallery__signature">Aplikacja</p>
 </div>
 </a>
 </li>
@@ -213,52 +213,52 @@ do celów szpiegowskich i ataków na niezabezpieczone serwery konkurencji</p>
 </div>
 </section>
 </main>
-<footer class="page__footer">
-<div class="container">
-<div class="page__footer--wrap">
+<footer class="footer__page">
+<div class="footer__container container">
+<div class="footer__page--wrap">
 <a class="logo" href="WebStudio.html">Web<span class="logo--footer">Studio</span></a>
 <ul class="list">
 <li>
 <address class="footer__address"> m. Warszawa, Aleje Jerozolimskie 21</address>
 </li>
 <li>
-<a class="link" href="mailto:info@example.com">info@example.com</a>
+<a class="footer__link" href="mailto:info@example.com">info@example.com</a>
 </li>
 <li>
-<a class="link" href="tel:+48111111111">+48 111 111 111</a>
+<a class="footer__link" href="tel:+48111111111">+48 111 111 111</a>
 </li>
 </ul>
 </div>
-<div class="page__footer--wrap">
+<div class="footer__page--wrap">
 <h3 class="footer__heading">Dołącz do nas</h3>
 <ul class="footer__list">
 <li>
 <a class="footer__item" href="#">
-<svg class="icon icon__footer">
+<svg class="footer__icon icon">
 <use href="./images/icons.svg#icon-instagram"></use></svg></a></li>
 <li>
 <a class="footer__item" href="#">
-<svg class="icon icon__footer">
+<svg class="footer__icon icon">
 <use href="./images/icons.svg#icon-twitter"></use></svg></a></li>
 <li>
 <a class="footer__item" href="#">
-<svg class="icon icon__footer">
+<svg class="footer__icon icon">
 <use href="./images/icons.svg#icon-facebook"></use></svg></a></li>
 <li>
 <a class="footer__item" href="#">
-<svg class="icon icon__footer">
+<svg class="footer__icon icon">
 <use href="./images/icons.svg#icon-linkedin"></use></svg></a></li>
 </ul>
 </div>
-<div class="page-footer__newsletter">
-    <h3 class="footer__heading">Zapisz się do newslettera</h3>
-    <form class="footer-newsletter" name="newsletter">
+<div class="newsletter__page">
+    <h3 class="newsletter__heading">Zapisz się do newslettera</h3>
+    <form class="newsletter__footer" name="newsletter">
         <label>
-            <input class="footer-newsletter__email" type="email" name="email" placeholder="E-mail" />
+            <input class="newsletter__email" type="email" name="email" placeholder="E-mail" />
         </label>
-        <button class="button__newsletter" type="submit">
+        <button class="newsletter__button" type="submit">
             <span>Zapisz się</span>
-            <svg class="icon icon__newsletter">
+            <svg class="newsletter__icon icon">
                 <use href="./images/icons.svg#icon-icon-send"></use>
             </svg>
         </button>

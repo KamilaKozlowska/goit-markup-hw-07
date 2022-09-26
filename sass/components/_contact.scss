@@ -1,0 +1,38 @@
+.contact {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.15;
+    letter-spacing: 0.02em;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact__item:not(:last-child) {
+    margin-right: 50px;
+}
+
+.contact__link {
+    color: var(--fontColorSecond);
+    text-decoration: none;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.contact__link:focus,
+.contact__link:hover {
+    color: var(--colorBlue);
+}
+
+.contact__envelope {
+    width: 16px;
+    height: 12px;
+}
+
+.contact__telephone {
+    width: 10px;
+    height: 16px;
+}
