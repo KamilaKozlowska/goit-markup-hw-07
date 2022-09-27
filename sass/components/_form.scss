@@ -58,11 +58,11 @@
     border-color: var(--colorBlue);
 }
 
-&:hover+.icon__input,
-&:focus+.icon__input {
+&:hover+.form__icon,
+&:focus+.form__icon {
     fill: var(--colorBlue);
 }
-}
+ }
 
 .form__icon {
     position: absolute;
