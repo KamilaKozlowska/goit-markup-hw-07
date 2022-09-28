@@ -30,21 +30,21 @@
       color: var(--colorBlue);
       outline-color: var(--colorBlue);
     }
-  }
 
-  &__link--current {
-    color: var(--colorBlue);
-    text-decoration: none;
+    &--current {
+      color: var(--colorBlue);
+      text-decoration: none;
 
-    &::after {
-      content: "";
-      position: absolute;
-      height: 4px;
-      width: 100%;
-      border-radius: 2px;
-      background-color: var(--colorBlue);
-      top: 46px;
-      left: 0;
+      &::after {
+        content: "";
+        position: absolute;
+        height: 4px;
+        width: 100%;
+        border-radius: 2px;
+        background-color: var(--colorBlue);
+        top: 46px;
+        left: 0;
+      }
     }
   }
 }

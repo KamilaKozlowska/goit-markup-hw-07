@@ -55,14 +55,11 @@
     &:hover,
     &:focus {
       border-color: var(--colorBlue);
-    }
-
-    &:hover + .form__icon,
-    &:focus + .form__icon {
-      fill: var(--colorBlue);
+      & + .form__icon {
+        fill: var(--colorBlue);
+      }
     }
   }
-
   &__icon {
     position: absolute;
     width: 18px;
@@ -72,19 +69,4 @@
     fill: var(--colorBlack);
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
-}
-
-.icon-person-black {
-  width: 18px;
-  height: 18px;
-}
-
-.icon-phone-black {
-  width: 18px;
-  height: 18px;
-}
-
-.icon-email-black {
-  width: 18px;
-  height: 18px;
 }

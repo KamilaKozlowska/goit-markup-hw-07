@@ -1,9 +1,8 @@
-.team img {
-  display: block;
-}
 .team {
   background-color: var(--colorDarkWhite);
-
+  & img {
+    display: block;
+  }
   &__container {
     flex-direction: column;
   }

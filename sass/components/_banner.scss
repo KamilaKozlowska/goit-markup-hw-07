@@ -47,20 +47,4 @@
   border-radius: 4px;
   border-color: transparent;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-
-  .button {
-    background: var(--colorDarkwhite);
-    color: var(--fontColorFirst);
-    font-family: "Roboto";
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.62;
-    text-align: center;
-
-    &:hover {
-      background: var(--colorBlue);
-      color: var(--colorWhite);
-      cursor: pointer;
-    }
-  }
 }
