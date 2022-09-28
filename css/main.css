@@ -92,7 +92,6 @@ header {
   text-decoration: none;
   color: var(--colorBlue);
 }
-
 .logo__label {
   color: var(--fontColorFirst);
 }
@@ -110,21 +109,18 @@ header {
       -ms-flex-align: center;
           align-items: center;
 }
-
 .nav__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin-left: 93px;
 }
-
 .nav__item {
   position: relative;
 }
 .nav__item:not(:last-child) {
   margin-right: 50px;
 }
-
 .nav__link {
   text-decoration: none;
   color: var(--fontColorFirst);
@@ -135,7 +131,6 @@ header {
   color: var(--colorBlue);
   outline-color: var(--colorBlue);
 }
-
 .nav__link--current {
   color: var(--colorBlue);
   text-decoration: none;
@@ -167,11 +162,9 @@ header {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-
 .contact__item:not(:last-child) {
   margin-right: 50px;
 }
-
 .contact__link {
   color: var(--fontColorSecond);
   text-decoration: none;
@@ -188,12 +181,10 @@ header {
 .contact__link:focus, .contact__link:hover {
   color: var(--colorBlue);
 }
-
 .contact__envelope {
   width: 16px;
   height: 12px;
 }
-
 .contact__telephone {
   width: 10px;
   height: 16px;
@@ -206,7 +197,6 @@ header {
   background-repeat: no-repeat;
   background-size: 1600px;
 }
-
 .banner__container {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -215,7 +205,6 @@ header {
   padding-top: 200px;
   padding-bottom: 200px;
 }
-
 .banner__headline {
   font-weight: 900;
   font-size: 44px;
@@ -254,8 +243,7 @@ header {
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
-
-.button {
+.button__order .button {
   background: var(--colorDarkwhite);
   color: var(--fontColorFirst);
   font-family: "Roboto";
@@ -264,7 +252,7 @@ header {
   line-height: 1.62;
   text-align: center;
 }
-.button:hover {
+.button__order .button:hover {
   background: var(--colorBlue);
   color: var(--colorWhite);
   cursor: pointer;
@@ -372,21 +360,19 @@ header {
   background: var(--color-transparent-what-we-do);
 }
 
-.team__people img {
+.team img {
   display: block;
 }
 
 .team {
   background-color: var(--colorDarkWhite);
 }
-
 .team__container {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
 }
-
 .team__headline {
   font-family: "Roboto";
   font-weight: 700;
@@ -399,7 +385,6 @@ header {
           justify-content: center;
   margin: 0 auto 50px auto;
 }
-
 .team__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -419,7 +404,6 @@ header {
           align-items: center;
   padding: 30px 0;
 }
-
 .team__caption {
   padding-top: 30px;
   padding-bottom: 30px;
@@ -437,14 +421,12 @@ header {
       -ms-flex-pack: center;
           justify-content: center;
 }
-
 .team__item {
   background-color: var(--colorWhite);
   border-radius: 0px 0px 4px 4px;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 }
-
 .team__name {
   font-weight: 500;
   font-size: 16px;
@@ -457,7 +439,6 @@ header {
   padding: 0;
   margin: 0 0 10px 0;
 }
-
 .team__position {
   font-size: 16px;
   line-height: 1.18;
@@ -470,7 +451,6 @@ header {
   margin: 0;
   margin-bottom: 16px;
 }
-
 .team__link {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -493,12 +473,10 @@ header {
   background-color: var(--colorBlue);
   color: var(--colorWhite);
 }
-
 .team__icon {
   width: 20px;
   height: 20px;
 }
-
 .team__socials {
   margin: 0;
   padding: 0;
@@ -583,13 +561,11 @@ header {
   display: -ms-flexbox;
   display: flex;
 }
-
 .footer__container {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-
 .footer__wrap {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -599,12 +575,10 @@ header {
   display: -ms-flexbox;
   display: flex;
 }
-
-.logo--footer {
+.footer .logo--footer {
   color: var(--colorWhite);
   margin-top: auto;
 }
-
 .footer__address {
   font-style: normal;
   font-weight: 400;
@@ -614,11 +588,9 @@ header {
   color: var(--colorWhite);
   padding-top: 24px;
 }
-
 .footer__contact-item:not(:last-child) {
   margin-bottom: 9px;
 }
-
 .footer__link {
   text-decoration: none;
   color: var(--fontColorSecond);
@@ -628,7 +600,6 @@ header {
 .footer__link:focus, .footer__link:hover {
   color: var(--colorBlue);
 }
-
 .footer__heading {
   margin-top: 12px;
   margin-bottom: 20px;
@@ -639,7 +610,6 @@ header {
   text-transform: uppercase;
   color: var(--colorWhite);
 }
-
 .footer__list {
   padding: 0;
   margin: 0;
@@ -651,7 +621,6 @@ header {
           justify-content: center;
   gap: 10px;
 }
-
 .footer__item {
   color: var(--colorWhite);
   width: 44px;
@@ -670,10 +639,9 @@ header {
   -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.footer__itemitem:hover, .footer__itemitem:focus {
+.footer__item:hover, .footer__item:focus {
   background-color: var(--colorBlue);
 }
-
 .footer__icon {
   width: 20px;
   height: 20px;
@@ -961,7 +929,6 @@ header {
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 }
-
 .modal__close {
   width: 30px;
   height: 30px;
@@ -988,8 +955,8 @@ header {
   cursor: pointer;
   border-color: var(--colorBlue);
   color: var(--colorBlue);
+  fill: var(--colorBlue);
 }
-
 .modal__icon {
   width: 18px;
   height: 18px;
@@ -1008,7 +975,6 @@ header {
       -ms-flex-direction: column;
           flex-direction: column;
 }
-
 .form__title {
   font-weight: 700;
   font-size: 20px;
@@ -1017,7 +983,6 @@ header {
   text-align: center;
   margin-bottom: 12px;
 }
-
 .form__label {
   position: relative;
   margin-bottom: 10px;
@@ -1034,7 +999,6 @@ header {
   letter-spacing: 0.01em;
   color: var(--colorGrey);
 }
-
 .form__textarea {
   outline: none;
   resize: none;
@@ -1062,7 +1026,6 @@ header {
 .form__textarea::placeholder {
   color: rgba(117, 117, 117, 0.5);
 }
-
 .form__input {
   color: var(--colorBlack);
   outline: none;
@@ -1073,16 +1036,12 @@ header {
   -webkit-transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.form__input:hover,
-.form__input:focus {
+.form__input:hover, .form__input:focus {
   border-color: var(--colorBlue);
 }
-
-.form__input:hover+.form__icon,
-.form__input:focus+.form__icon {
+.form__input:hover + .form__icon, .form__input:focus + .form__icon {
   fill: var(--colorBlue);
 }
-
 .form__icon {
   position: absolute;
   width: 18px;
