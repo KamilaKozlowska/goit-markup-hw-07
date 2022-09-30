@@ -243,20 +243,6 @@ header {
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
-.button__order .button {
-  background: var(--colorDarkwhite);
-  color: var(--fontColorFirst);
-  font-family: "Roboto";
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.62;
-  text-align: center;
-}
-.button__order .button:hover {
-  background: var(--colorBlue);
-  color: var(--colorWhite);
-  cursor: pointer;
-}
 
 .solution__list {
   margin: 0;
@@ -360,12 +346,11 @@ header {
   background: var(--color-transparent-what-we-do);
 }
 
-.team img {
-  display: block;
-}
-
 .team {
   background-color: var(--colorDarkWhite);
+}
+.team img {
+  display: block;
 }
 .team__container {
   -webkit-box-orient: vertical;
@@ -1051,21 +1036,6 @@ header {
   fill: var(--colorBlack);
   -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.icon-person-black {
-  width: 18px;
-  height: 18px;
-}
-
-.icon-phone-black {
-  width: 18px;
-  height: 18px;
-}
-
-.icon-email-black {
-  width: 18px;
-  height: 18px;
 }
 
 .form-service__check {
